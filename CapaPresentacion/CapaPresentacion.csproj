@@ -8,4 +8,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+	
+		// Se referencia la capa de negocio para que se conozca el IServicioCredito,SolicitudCredito,ResultadoCredito
+		//Tambien se marca la capa de acceso de datos para poder implementar de manera real el IaccesoCentralRiesgo
+		
+  <ItemGroup>
+    <ProjectReference Include="..\CapaAccesoDatos\CapaAccesoDatos.csproj" />
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj" />
+  </ItemGroup>
+
 </Project>
