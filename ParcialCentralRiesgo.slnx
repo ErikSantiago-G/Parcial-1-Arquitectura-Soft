@@ -1,3 +1,8 @@
 <Solution>
+  <Folder Name="/Elementos de la solución/" />
   <Project Path="CapaAccesoDatos/CapaAccesoDatos.csproj" />
+  <Project Path="CapaNegocio/CapaNegocio.csproj" Id="f2956609-37e8-48b0-b1b2-c811696ecbaa" />
+  <Project Path="CapaPresentacion/CapaPresentacion.csproj" Id="5c675cf3-49cf-41c5-af71-674592b2a681" />
+  <Project Path="DatosSimulados/DatosSimulados.csproj" Id="c4a0b604-99f9-42af-af71-b025521ab99c" />
+  <Project Path="PruebasUnitarias/PruebasUnitarias.csproj" Id="be65544e-9059-4fe0-86e5-e5e254d6b71c" />
 </Solution>
