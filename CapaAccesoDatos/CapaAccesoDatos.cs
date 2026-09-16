@@ -2,9 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using CapaNegocio.Interfaces;
 namespace CapaAccesoDatos
 {
-    public class CapaAccesoDatos
+    public class CapaAccesoDatos : IAccesoCentralRiesgo
     {
         private SqlConnection conexion;
 
