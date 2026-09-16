@@ -1,17 +1,23 @@
+using System;
+using CapaAccesoDatos;
+using CapaNegocio.Interfaces;
+using CapaNegocio.Servicios;
+
 namespace CapaPresentacion
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            // Aqui se conectan las implementaciones concretas
+            // con las abstracciones que pide Negocio.
+            IAccesoCentralRiesgo accesoCentralRiesgo = new CapaAccesoDatos.CapaAccesoDatos();
+            IServicioCredito servicioCredito = new ServicioCredito(accesoCentralRiesgo);
+
+            Application.Run(new Form1(servicioCredito));
         }
     }
 }
